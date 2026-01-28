@@ -13,7 +13,10 @@ courses = {
     'Python': ['https://www.w3schools.com/python/', 'https://docs.python.org/3/tutorial/'],
     'HTML': ['https://www.w3schools.com/html/'],
     'CSS': ['https://www.w3schools.com/css/'],
-    'JavaScript': ['https://www.w3schools.com/js/']
+    'JavaScript': ['https://www.w3schools.com/js/'],
+    'Udemy': ['https://www.udemy.com/'],
+    'chatgpt': ['https://chatgpt.com/c/696f5be2-e704-8320-b8cb-da4f64f43c8e'],
+               
 }
 
 @app.route('/')
@@ -48,4 +51,4 @@ def clear():
     return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=8000)
+    app.run(debug=True, host='0.0.0.0', port=8089)
