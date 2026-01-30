@@ -13,6 +13,6 @@ template:
   spec:
     containers:
        - name: pythonimage
-         image:
+         image: azurecontainer2026.azurecr.io/pythonimage
          ports:
           - containerport: 8089
