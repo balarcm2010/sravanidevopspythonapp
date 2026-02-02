@@ -4,8 +4,11 @@ metadata:
   name: pythonimage
 spec:
   type: LoadBalancer
-  selector: 
-    app: pythonapp
-ports:
-  - name: http
-    port: 8063
+  selector:
+    app: pythonimage
+  ports:
+    - name: http
+      port: 8063
+      targetPort: 8089
+
+  

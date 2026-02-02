@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: deployment
+kind: Deployment
 metadata:
   name: pythonimage
 spec:
@@ -7,12 +7,13 @@ spec:
   selector:
     matchLabels:
       app: pythonimage
-template:
-  metadata:
-    name: pythonimage
-  spec:
-    containers:
-       - name: pythonimage
-         image: azurecontainer2026.azurecr.io/pythonimage
-         ports:
-          - containerport: 8089
+  template:
+    metadata:
+      labels:
+        app: pythonimage
+    spec:
+      containers:
+        - name: pythonimage
+          image: balarcm2010/pythonapp:v1
+          ports:
+            - containerPort: 8089
