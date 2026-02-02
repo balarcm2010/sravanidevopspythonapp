@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: pythonimage
-          image: balarcm2010/pythonapp:v1
+          image: azurecontainer2026.azurecr.io/pythonimage
           ports:
             - containerPort: 8089
