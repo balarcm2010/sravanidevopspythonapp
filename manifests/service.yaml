@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pythonimage
+    name: pythonimage
 spec:
   type: LoadBalancer
   selector:
-    app: pythonimage
+     app: pythonapp
   ports:
     - name: http
       port: 8063

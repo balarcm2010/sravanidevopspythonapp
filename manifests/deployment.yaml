@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pythonimage
+    name: pythonimage
 spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: pythonimage
-  template:
-    metadata:
-      labels:
-        app: pythonimage
-    spec:
-      containers:
-        - name: pythonimage
-          image: azurecontainer2026.azurecr.io/pythonimage
-          ports:
-            - containerPort: 8089
+    replicas: 1
+    selector:
+      matchLabels:
+          app: pythonapp
+    template:
+      metadata:
+          name: pythonimage
+          labels: 
+              app: pythonapp
+      spec:
+          containers:
+              - name: pythonimage
+                image: 
+                ports:
+                  - containerPort: 8080
